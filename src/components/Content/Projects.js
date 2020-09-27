@@ -10,15 +10,17 @@ class ProjectsMain extends React.Component{
 		this.props.topProjects()
 	}
 
+	
+
 	renderContent = () => {
 	return	this.props.projects.map((project)=>{
 		
 			return (
 				<div className="col-md-12 col-sm-12 col-xs-12" key={project._id}  style={{margin:"7px"}}>
-                    <div className="ui segment" style={{background:"black", color:"white"}}>
-						<img className="ui small left floated image" src={project.imgUrl}
-						 style={{height:"250px", width:"250px", overflow:"hidden"}} alt="title"/>
-						<h3 style={{color:"white"}}>{project.title}</h3>
+                    <div className="ui segment" >
+						<img className="ui medium left floated image" src={project.imgUrl}
+						 alt="title"/>
+						<h3>{project.title}</h3>
 						<p>{project.description}</p>
 						<a href={project.url} target="__blank"><button className="ui inverted green button">See more</button></a>
                     </div>

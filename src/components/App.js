@@ -6,7 +6,9 @@ import NavBar from './NavBar'
 import View from "./Content/View"
 import ProjectList from "./Projects/ProjectList"
 import Resume from "./Resume/Resume"
-
+import Login from "./Admin/Login"
+import Dashboard from "./Admin/Dashboard"
+import EditProject from "./Admin/EditProject"
 
 class App extends React.Component{
 
@@ -21,6 +23,9 @@ class App extends React.Component{
                 <Route path="/" exact component={View}></Route>
                 <Route path="/projects" component={ProjectList}></Route>
                 <Route path="/resume" component={Resume}></Route>
+                <Route path="/admLogin" component={Login}></Route>
+                <Route path="/admDash" component={Dashboard}></Route>
+                <Route path="/editP/:id" component={EditProject}></Route>
             </ HashRouter>
 
         )

@@ -13,6 +13,7 @@ class NavBar extends React.Component{
             <Link to="/" className="ui right floated item">01. About</Link>
             <Link to="/projects" className="ui right floated item">02. Projects</Link>
             <Link to="/resume" className="ui right floated item">03. Resume</Link>
+            <Link to="/admDash" className="ui right floated item">05. Admin</Link>
             </div>
           </div>
         )

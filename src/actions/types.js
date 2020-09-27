@@ -1,3 +1,6 @@
 export const TOP_PROJECT = "TOP_PROJECTS"
 export const CONTACT = "CONTACT"
 export const ALL_PROJECTS = "ALL_PROJECTS"
+export const LOGIN = "LOGIN"
+export const LOGOUT = "LOGOUT"
+export const PROJECT = "PROJECT"
