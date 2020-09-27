@@ -15,6 +15,7 @@ class App extends React.Component{
     componentDidMount(){
         dataApi.get("/")
     }
+    
 
     render(){
         return(

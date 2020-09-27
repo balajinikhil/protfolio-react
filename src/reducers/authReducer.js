@@ -6,7 +6,7 @@ import {
 const initialize = {
 
     loggedIn: sessionStorage.getItem('loggedIn') || null, 
-    token: sessionStorage.getItem('token') || null
+    token: sessionStorage.getItem('token') || 'QASXDCFGTTTREWSASDXF'
 }
 
 const authReducer = (state=initialize, action)=>{

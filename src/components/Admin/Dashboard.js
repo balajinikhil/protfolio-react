@@ -71,8 +71,7 @@ class Dashboard extends React.Component{
     }
 
     render(){
-        if(this.props.auth.loggedIn){
-           
+        if(this.props.auth.token === sessionStorage.getItem('token')){
             return this.renderContent()
 
         }else{
