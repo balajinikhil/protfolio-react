@@ -11,7 +11,7 @@ class AddProject extends React.Component{
     formSubmit = (e) => {
         e.preventDefault()
         this.props.addOneProject(this.props.token, this.state)
-        window.location.reload();
+        // window.location.reload();
     }
 
     render(){

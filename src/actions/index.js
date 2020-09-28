@@ -110,6 +110,9 @@ export const addOneProject = (token, data) => async (dispatch) => {
                 Authorization:token
             }
         })
+        history.go(0)
+        // history.push("/admDash")
+
     }catch(err){
         console.log(err);
     }
@@ -123,6 +126,8 @@ export const deleteOneProject = (token, _id) => async (dispatch) =>{
                 Authorization:token
             }
         })
+        history.go(0)
+        // history.push("/admDash")
     }catch(err){
         console.log(err);
     }

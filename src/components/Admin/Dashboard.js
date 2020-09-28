@@ -36,7 +36,7 @@ class Dashboard extends React.Component{
                             }}>Edit</button>
                             <button className="ui negative button" onClick={()=>{
                                 this.props.deleteOneProject(this.props.auth.token, project._id);
-                                window.location.reload();
+                                // window.location.reload();
                             }}
                             style={{marginLeft:"10px"}} >Delete</button>
                         </div>

@@ -76,8 +76,7 @@ class EditProject extends React.Component{
     }
 
     render(){
-        console.log(this.props);
-        if(this.props.auth.loggedIn){
+        if(this.props.auth.token === sessionStorage.getItem('token')){
            
             return this.renderContent()
 
